@@ -234,7 +234,8 @@ h2 {
     flex-wrap: wrap;
 }
 
-.form-email input {
+
+/* .form-email input {
     border-color: gray;
     border-style: solid;
     border-radius: 5px;
@@ -257,6 +258,35 @@ h2 {
 }
 
 .form-email h3 {
+    text-transform: uppercase;
+} */
+
+.email p {
+    border-color: gray;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 10px 20px 10px 25px;
+    background-image: url('../images/envelope.svg');
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+    background-color: #ccc;
+    font-style: bold;
+    color: black;
+}
+
+.email button {
+    display: block;
+    background: transparent;
+    color: white;
+    padding: 5px 0;
+    border-radius: 5px;
+    width: 100px;
+    margin-top: 10px;
+}
+
+.email h3 {
     text-transform: uppercase;
 }
 
@@ -474,10 +504,16 @@ h2 {
         text-align: center;
         display: block;
     }
-    .form-email h3 {
+    /* .form-email h3 {
         margin-top: 0;
     }
     .form-email button {
+        margin: 1em auto;
+    } */
+    .email h3 {
+        margin-top: 0;
+    }
+    .email button {
         margin: 1em auto;
     }
     .social-link {

@@ -119,12 +119,18 @@
     </section>
     <section id="contacto" class="contact">
         <div class="container">
-            <form action="/suscripcion/" class="form-email">
+            <!--<form action="/subscription/" class="form-email">
                 <h3>¿Creamos algo juntos?</h3>
-                <!--<input type="text" placeholder="Déjame tu email" id="email">
-                <button>Enviar</button>-->
+                <input type="text" placeholder="Déjame tu email" id="email">
+                <button>Enviar</button>
+            </form>-->
+            <div class="email">
+                <h3>¿Creamos algo juntos?</h3>
+                <p id="email">cindybibiano95@gmail.com</p>
+                <button onclick="copyEmail('email')">Copiar e-mail</button>
+                <br/>
+            </div>
 
-            </form>
             <div class="social">
                 <a href="https://twitter.com/cindybibiano" class="social-link twitter" target="_blank"></a>
                 <a href="https://facebook.com/CindyBibianoM" class="social-link facebook" target="_blank"></a>
@@ -164,6 +170,15 @@
             } else {
                 menu.classList.add('is-active');
             }
+        }
+
+        function copyEmail(id_email) {
+            var aux = document.createElement("input");
+            aux.setAttribute("value", document.getElementById(id_email).innerHTML);
+            document.body.appendChild(aux);
+            aux.select();
+            document.execCommand("copy");
+            document.body.removeChild(aux);
         }
     </script>
 </body>
